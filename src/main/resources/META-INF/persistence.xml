@@ -15,23 +15,25 @@
 			<!-- you can choose to use native hibernate properties -->
 			<!-- or -->
 			<!-- generic JPA properties, where available -->
-			<!-- <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" 
+			<!-- <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"
 				/> -->
-			<!-- <property name="hibernate.connection.url" value="jdbc:postgresql:minibase" 
+			<!-- <property name="hibernate.connection.url" value="jdbc:postgresql:minibase"
 				/> -->
 			<!-- <property name="hibernate.connection.username" value="minibase" /> -->
 			<!-- <property name="hibernate.connection.password" value="minibase" /> -->
 
 			<!-- generic JPA properties -->
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/formationdb?useSSL=false&amp;serverTimezone=UTC" />
-			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="hibernate.connection.url"
+				value="jdbc:postgresql://localhost:5432/testdb" />
+			<property name="javax.persistence.jdbc.user"
+				value="postgres" />
 			<property name="javax.persistence.jdbc.password"
 				value="admin" />
 			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+				value="org.postgresql.Driver" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.PostgreSQL95Dialect" />
 		</properties>
 	</persistence-unit>
-</persistence>	
+</persistence>
 
-	
